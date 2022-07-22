@@ -82,6 +82,8 @@ p {
 
 ul,
 ol {
+   margin: 0;
+   padding: 0;
    list-style-type: none;
 }
 
@@ -218,4 +220,76 @@ ol {
    background-image: url("../images/hero-bg.png");
    background-repeat: no-repeat;
    background-size: contain;
+}
+
+/* CONTACT START */
+.contact {
+   padding-top: 96px;
+   padding-bottom: 94px;
+   background-color: #F4F5F7;
+}
+
+.contact__text-wrapper {
+   width: 635px;
+   margin-bottom: 72px;
+}
+
+.contact__heading {
+   font-size: 40px;
+   line-height: 64px;
+   letter-spacing: -0.714286px;
+   margin-bottom: 16px;
+}
+
+.contact__text {
+   font-size: 18px;
+   line-height: 28px;
+   letter-spacing: -0.28125px;
+}
+
+.contact__list {
+   display: flex;
+   justify-content: space-between;
+}
+
+.contact__item {
+   width: 255px;
+}
+
+.contact__item::before {
+   content: "";
+   display: inline-block;
+   width: 72px;
+   height: 72px;
+   margin-bottom: 40px;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.contact__item:nth-child(1):before {
+   background-image: url("../images/banking.svg");
+}
+
+.contact__item:nth-child(2):before {
+   background-image: url("../images/budgeting.svg");
+}
+
+.contact__item:nth-child(3):before {
+   background-image: url("../images/onboarding.svg");
+}
+
+.contact__item:nth-child(4):before {
+   background-image: url("../images/API.svg");
+}
+
+.contact__item-heading {
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: -0.428571px;
+   margin-bottom: 26px;
+}
+
+.contact-item-desc {
+   line-height: 26px;
+   letter-spacing: -0.25px;
 }
