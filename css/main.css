@@ -173,3 +173,7 @@ ol {
 .site-header__link:hover {
    opacity: 0.7;
 }
+
+.site-header__link:active {
+   opacity: 0.5;
+}
