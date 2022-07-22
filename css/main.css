@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* FONTS */
 
 @font-face {
@@ -40,18 +47,25 @@
 *,
 *::before,
 *::after {
-   box-sizing: inherit;
+   -webkit-box-sizing: inherit;
+           box-sizing: inherit;
 }
 
 html {
    height: 100%;
-   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
    scroll-behavior: smooth;
 }
 
 body {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   flex-direction: column;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
    height: 100%;
    margin: 0;
    padding: 0;
@@ -94,6 +108,7 @@ ol {
    padding: 8px 36px 8px 33px;
    color: #FFFFFF;
    border-radius: 22px;
+   background-image: -o-linear-gradient(315deg, #33D35E 0%, #2AB6D9 99.58%);
    background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
    display: inline-block;
    text-decoration: none;
@@ -127,7 +142,8 @@ ol {
    padding: 0;
    border: 0;
    white-space: nowrap;
-   clip-path: inset(100%);
+   -webkit-clip-path: inset(100%);
+           clip-path: inset(100%);
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
@@ -135,7 +151,9 @@ ol {
 /* STICKY-FOOTER */
 
 .site-main {
-   flex-grow: 1;
+   -webkit-box-flex: 1;
+       -ms-flex-positive: 1;
+           flex-grow: 1;
 }
 
 /* SITE-HEADER START */
@@ -152,14 +170,24 @@ ol {
 }
 
 .site-header__inner {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   align-items: center;
-   justify-content: space-between;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
 }
 
 .nav__list {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   align-items: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
 }
 
 .nav__item:not(:last-child) {
@@ -173,6 +201,8 @@ ol {
    padding-bottom: 28px;
    color: var(--gray);
    text-decoration: none;
+   -webkit-transition: all 0.2s ease;
+   -o-transition: all 0.2s ease;
    transition: all 0.2s ease;
 }
 
@@ -190,6 +220,8 @@ ol {
 }
 
 .hero__inner {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
 }
 
@@ -248,8 +280,12 @@ ol {
 }
 
 .contact__list {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: space-between;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
 }
 
 .contact__item {
@@ -309,8 +345,12 @@ ol {
 }
 
 .blog__list {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: space-between;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
 }
 
 .blog__item {
@@ -359,9 +399,15 @@ ol {
 }
 
 .site-footer__inner {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   align-items: center;
-   justify-content: space-between;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
 }
 
 .site-footer__logo {
@@ -370,8 +416,12 @@ ol {
 }
 
 .site-footer__apps-list {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   align-items: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
 }
 
 .site-footer__apps-item:not(:last-child) {
@@ -388,8 +438,12 @@ ol {
 }
 
 .site-footer__middle-links {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   align-items: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
 }
 
 .site-footer__middle-list:first-child {
@@ -414,9 +468,16 @@ ol {
 }
 
 .site-footer__end {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   flex-direction: column;
-   align-items: flex-end;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: end;
+       -ms-flex-align: end;
+           align-items: flex-end;
 }
 
 .site-footer__end-desc {
