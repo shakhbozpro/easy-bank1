@@ -293,3 +293,60 @@ ol {
    line-height: 26px;
    letter-spacing: -0.25px;
 }
+
+/* BLOG START */
+.blog {
+   padding-top: 80px;
+   padding-bottom: 80px;
+   background-color: #FAFAFA;
+}
+
+.blog__heading {
+   font-size: 40px;
+   line-height: 64px;
+   letter-spacing: -0.714286px;
+   margin-bottom: 40px;
+}
+
+.blog__list {
+   display: flex;
+   justify-content: space-between;
+}
+
+.blog__item {
+   width: 255px;
+   border-radius: 5px;
+}
+
+.blog__item-img {
+   margin-bottom: 25px;
+}
+
+.blog__item-span {
+   font-size: 10px;
+   line-height: 18px;
+   letter-spacing: -0.15625px;
+   color: var(--gray);
+   margin-bottom: 8px;
+}
+
+.blog__item-heading {
+   line-height: 20px;
+   letter-spacing: -0.285714px;
+   margin-bottom: 8px;
+   cursor: pointer;
+}
+
+.blog__item-heading:hover {
+   color: var(--green);
+}
+
+.blog__item-heading:active {
+   opacity: 0.6;
+}
+
+.blog__desc {
+   font-size: 13px;
+   line-height: 18px;
+   letter-spacing: -0.203125px;
+}
