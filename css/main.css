@@ -6,26 +6,26 @@
    font-style: normal;
    font-weight: 100;
    src: url('../fonts/public-sans-v14-latin-100.woff2') format('woff2'),
-        url('../fonts/public-sans-v14-latin-100.woff') format('woff');
- }
+   url('../fonts/public-sans-v14-latin-100.woff') format('woff');
+}
 
- @font-face {
+@font-face {
    font-family: 'Public Sans';
    font-display: swap;
    font-style: normal;
    font-weight: 400;
    src: url('../fonts/public-sans-v14-latin-regular.woff2') format('woff2'),
-        url('../fonts/public-sans-v14-latin-regular.woff') format('woff');
- }
+   url('../fonts/public-sans-v14-latin-regular.woff') format('woff');
+}
 
- @font-face {
+@font-face {
    font-family: 'Public Sans';
    font-display: swap;
    font-style: normal;
    font-weight: 500;
    src: url('../fonts/public-sans-v14-latin-500.woff2') format('woff2'),
-        url('../fonts/public-sans-v14-latin-500.woff') format('woff');
- }
+   url('../fonts/public-sans-v14-latin-500.woff') format('woff');
+}
 
 /* VARIABLES */
 
@@ -33,7 +33,6 @@
    --gray : #9597A5;
    --dark-blue: #2D314D;
    --green: #30C88F;
-   --blue-green: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
 }
 
 /* GENERAL */
@@ -114,4 +113,63 @@ ol {
 
 .site-main {
    flex-grow: 1;
+}
+
+/* SITE-HEADER START */
+
+.site-header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   width: 100%;
+   background-color: #FFFFFF;
+}
+
+.site-header__inner {
+   padding-top: 18px;
+   padding-bottom: 18px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.nav__list {
+   display: flex;
+   align-items: center;
+}
+
+.nav__item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.nav__link {
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: -0.107692px;
+   padding-bottom: 28px;
+   color: var(--gray);
+   text-decoration: none;
+   transition: all 0.2s ease;
+}
+
+.nav__link:hover {
+   color: var(--dark-blue);
+   border-bottom: 4px solid var(--green);
+}
+
+.site-header__link {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 28px;
+   padding: 8px 36px 8px 33px;
+   color: #FFFFFF;
+   border-radius: 22px;
+   background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+   display: inline-block;
+   text-decoration: none;
+}
+
+.site-header__link:hover {
+   opacity: 0.7;
 }
